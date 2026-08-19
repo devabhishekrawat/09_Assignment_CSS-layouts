@@ -1,0 +1,207 @@
+@use "./variables.scss";
+
+.grid-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+
+  .recent-header,
+  .popular-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: variables.$text-dark;
+    margin-bottom: 15px;
+  }
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+
+  .feature-card_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-grid-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 15px;
+    color: variables.$card-bg;
+    background: linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 0.85)
+    );
+
+    .date {
+      margin: 0 0 6px;
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    .feature-overlay_heading {
+      margin: 0;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+  }
+}
+
+.aside-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.grid-left {
+  display: grid;
+  gap: 20px;
+}
+
+.featured-card {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 15px;
+    color: variables.$card-bg;
+    background: linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 0.85)
+    );
+
+    .date {
+      margin: 0 0 6px;
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    &_heading {
+      margin: 0;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+  }
+}
+
+.posts-subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  .post-card {
+    display: grid;
+    gap: 5px;
+
+    .post-card_img {
+      width: 100%;
+      // height: 130px;
+      object-fit: cover;
+    }
+
+    .date {
+      margin: 0;
+      font-size: 11px;
+      color: variables.$text-muted;
+    }
+
+    .desc {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.4;
+      color: variables.$text-body;
+    }
+  }
+}
+
+.grid-right {
+  display: grid;
+  align-content: start;
+  gap: 15px;
+}
+
+.side-card {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 12px;
+  align-items: start;
+
+  .side-card_img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  .side-card_para {
+    margin: 0;
+    font-size: 1.3em;
+    line-height: 1.4;
+    color: variables.$text-body;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aside-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-right {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts-subgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .featured-card {
+    height: 240px;
+  }
+
+  .side-card {
+    grid-template-columns: 60px 1fr;
+
+    .side-card_img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
