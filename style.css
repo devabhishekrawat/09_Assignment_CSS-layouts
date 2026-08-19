@@ -319,7 +319,7 @@
   opacity: 0.8em;
 }
 .container .feature-flex .feature-card .feature-overlay_heading {
-  font-size: 0.87em;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.3;
 }
@@ -336,41 +336,10 @@
   flex-direction: column;
 }
 
-h2 {
+.flex-heading {
   margin-bottom: 15px;
   font-size: 18px;
   color: #2c2c2c;
-}
-
-.featured-card {
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.featured-card img {
-  display: block;
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-}
-.featured-card .featured-overlay {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 15px;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  color: #ffffff;
-}
-.featured-card .featured-overlay .date {
-  margin-bottom: 5px;
-  font-size: 0.6em;
-  opacity: 0.8;
-}
-.featured-card .featured-overlay h3 {
-  font-size: 0.9em;
-  font-weight: normal;
-  line-height: 1.3;
 }
 
 .flex-grid {
@@ -440,7 +409,7 @@ h2 {
 }
 .grid-container .recent-header,
 .grid-container .popular-header {
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: bold;
   color: #2c2c2c;
   margin-bottom: 15px;
@@ -475,12 +444,12 @@ h2 {
 }
 .feature-card .feature-grid-overlay .date {
   margin: 0 0 6px;
-  font-size: 11px;
+  font-size: 0.9em;
   opacity: 0.8;
 }
 .feature-card .feature-grid-overlay .feature-overlay_heading {
   margin: 0;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -518,12 +487,12 @@ h2 {
 }
 .featured-card .featured-overlay .date {
   margin: 0 0 6px;
-  font-size: 11px;
+  font-size: 0.8em;
   opacity: 0.8;
 }
 .featured-card .featured-overlay_heading {
   margin: 0;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -543,12 +512,12 @@ h2 {
 }
 .posts-subgrid .post-card .date {
   margin: 0;
-  font-size: 11px;
+  font-size: 0.8em;
   color: #888;
 }
 .posts-subgrid .post-card .desc {
   margin: 0;
-  font-size: 12px;
+  font-size: 0.85em;
   line-height: 1.4;
   color: #444;
 }

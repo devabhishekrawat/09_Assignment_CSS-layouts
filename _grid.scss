@@ -13,7 +13,7 @@
 
   .recent-header,
   .popular-header {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: bold;
     color: variables.$text-dark;
     margin-bottom: 15px;
@@ -53,13 +53,13 @@
 
     .date {
       margin: 0 0 6px;
-      font-size: 11px;
+      font-size: 0.9em;
       opacity: 0.8;
     }
 
     .feature-overlay_heading {
       margin: 0;
-      font-size: 14px;
+      font-size: 1em;
       font-weight: normal;
       line-height: 1.4;
     }
@@ -103,13 +103,13 @@
 
     .date {
       margin: 0 0 6px;
-      font-size: 11px;
+      font-size: 0.8em;
       opacity: 0.8;
     }
 
     &_heading {
       margin: 0;
-      font-size: 14px;
+      font-size: 1em;
       font-weight: normal;
       line-height: 1.4;
     }
@@ -133,13 +133,13 @@
 
     .date {
       margin: 0;
-      font-size: 11px;
+      font-size: 0.8em;
       color: variables.$text-muted;
     }
 
     .desc {
       margin: 0;
-      font-size: 12px;
+      font-size: 0.85em;
       line-height: 1.4;
       color: variables.$text-body;
     }
